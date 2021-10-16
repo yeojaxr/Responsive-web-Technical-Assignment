@@ -37,12 +37,29 @@
         background-color: gray;
         color: white;
       }
-
-      .item-body > h5 {
-        margin: 0;
-        margin-bottom: 1em;
-        text-align: center;
-        text-transform: capitalize;
+      .flex{
+          display: flex;
+          flex-direction: row;
+      }
+      .categories{
+          flex: 2;
+      }
+      .list-item{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+      .item{
+          display: flex;
+          flex-direction: row;
+      }
+      /* .item-thumbnail{
+        flex: 1;
+      } */
+      .item-thumbnail > img{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
       }
       .item-body > button {
         width: 100%;
@@ -55,27 +72,16 @@
       .item-body > button:hover {
         background: green;
         color: white;
+        flex: 2;
       }
-      .flex{
-          display: flex;
-          flex-direction: row;
+      .item-body > h5 {
+        margin: 0;
+        margin-bottom: 1em;
+        text-align: center;
+        text-transform: capitalize;
       }
-      .categories{
-          flex: 2;
-      }
-      .list-item{
-          flex-direction: column;
-          align-items: center;
-      }
-      .item{
-          flex-direction: row;
-      }
-      .item-thumbnail item{
-          flex: 1;
-      }
-      .img item{
-          flex: 2;
-      }
+
+
 
 
 
@@ -99,11 +105,12 @@
         .item{
             flex-direction: column;
         }
-        .img item{
-            flex: auto; 
+        .item:first-child {
+          flex: 1;
+
         }
-        .item-thumbnail item{
-          flex: auto;
+        .item:nth-child(2) {
+            flex: auto; 
         }
         .item-text{
             display: none;
