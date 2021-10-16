@@ -8,7 +8,7 @@ Jawab: relative unit yang dimiliki CSS, yaitu: %, em, rem, ch, vh, vw, vmin
 Jawab: breakpoint adalah perubahan yang terjadi pada tampilan saat berganti device atau ukuran width. Cara membuat breakpoint yaitu dapat menggunakan range media query min dan max
 
 4. Apa yang dapat kita gunakan untuk memanipulasi tata letak suatu element dalam bidang 1 dimensi?
-Jawab: 
+Jawab: kita gunakan flex-box
 
 5. Apa yang dapat kita gunakan untuk memanipulasi tata letak suatu element dalam bidang 2 dimensi?
-Jawab: 
+Jawab: kita gunakan grid
